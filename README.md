@@ -1,11 +1,11 @@
-# naver-exchange-rate
+# naver-api-exchange-rate
 
 네이버 환율 정보를 쉽게 가져올 수 있는 Node.js 라이브러리입니다.
 
 ## 설치
 
 ```bash
-npm install naver-exchange-rate
+npm install naver-api-exchange-rate
 ```
 
 ## 사용법
@@ -13,7 +13,7 @@ npm install naver-exchange-rate
 ### 기본 사용법
 
 ```javascript
-import exchange from 'naver-exchange-rate';
+import exchange from 'naver-api-exchange-rate';
 
 // 1달러를 원화로 변환
 const result = await exchange();
@@ -31,7 +31,7 @@ console.log(result);
 ### 다양한 사용 방법
 
 ```javascript
-import exchange from 'naver-exchange-rate';
+import exchange from 'naver-api-exchange-rate';
 
 // 100달러를 원화로 변환
 const result1 = await exchange({ amount: 100 });
@@ -55,7 +55,7 @@ console.log(`10000원 = ${result3.result}달러`);
 자주 사용하는 환율 변환을 위한 간편한 메서드를 제공합니다:
 
 ```javascript
-import { usdToKrw, krwToUsd, eurToKrw, jpyToKrw, cnyToKrw } from 'naver-exchange-rate';
+import { usdToKrw, krwToUsd, eurToKrw, jpyToKrw, cnyToKrw } from 'naver-api-exchange-rate';
 
 // 50달러를 원화로
 const krw = await usdToKrw(50);
@@ -75,7 +75,7 @@ console.log(`100유로 = ${eurResult.result}원`);
 모든 3자리 ISO 통화 코드를 지원합니다:
 
 ```javascript
-import exchange from 'naver-exchange-rate';
+import exchange from 'naver-api-exchange-rate';
 
 // 엔화를 원화로
 const result = await exchange({
@@ -135,7 +135,7 @@ const mxn = await exchange({ from: 'MXN', to: 'KRW' });  // 멕시코 페소
 ## 에러 처리
 
 ```javascript
-import exchange from 'naver-exchange-rate';
+import exchange from 'naver-api-exchange-rate';
 
 try {
   const result = await exchange({ amount: -100 });

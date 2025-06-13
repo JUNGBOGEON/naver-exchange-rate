@@ -1,0 +1,31 @@
+{
+  "name": "naver-exchange-rate",
+  "version": "1.0.0",
+  "description": "네이버 기반 실시간 환율 계산 라이브러리",
+  "main": "src/index.js",
+  "type": "module",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/**/*.test.js"
+  },
+  "keywords": [
+    "exchange-rate",
+    "currency",
+    "naver",
+    "환율",
+    "통화",
+    "korean-won",
+    "krw"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}

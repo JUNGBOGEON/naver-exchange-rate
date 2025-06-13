@@ -1,6 +1,6 @@
 {
   "name": "naver-exchange-rate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "네이버 기반 실시간 환율 계산 라이브러리",
   "repository": {
     "type": "git",
